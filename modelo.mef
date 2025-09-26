@@ -1,0 +1,8 @@
+Arquivo de entrada de geometria (linha livre para acrescentar comentários)
+Nodes
+x y z
+end
+
+Elements
+material node1 node2
+end

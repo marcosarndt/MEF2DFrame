@@ -1,0 +1,33 @@
+Arquivo de entrada de carregamento (linha livre para comentários)
+
+Dados Analise
+elemento(truss ou frame) análise(estatica, modal ou transiente) método_integ_tempo(DC,NAC,NAL) taxa_amort tipo_força arg_força delta_t Tempo_analise
+
+Material
+densidade área mód._de_elasticidade inércia
+end
+
+C Contorno
+nó direção (x=0, y=1, rot=2) valor
+end
+
+F nodais
+nó Fx Fy Mz
+end
+
+F elementares
+elemento pxlocal qy1local qy2local
+end
+
+Apoios elasticos
+nó kx ky ktheta
+end
+
+# os blocos abaixo só precisam estar presente na análise transiente
+C inicial desloc
+nó dx dy rotz
+end
+
+C inicial vel
+nó vx vy vrotz
+end
